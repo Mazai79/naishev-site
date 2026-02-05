@@ -1,28 +1,78 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Admin</title>
+<head>
+  <meta charset="utf-8" />
+  <title>Dmitry Naishev — Personal site</title>
 
-    <!-- Netlify Identity (обязательно для Git Gateway) -->
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  </head>
-  <body>
-    <!-- Decap CMS -->
-    <script src="https://unpkg.com/decap-cms@latest/dist/decap-cms.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta name="description" content="Персональный сайт и блог Дмитрия Найшева" />
 
-    <script>
-      // Редирект после логина (часто решает белый экран на iOS)
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", (user) => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
-          }
-        });
-      }
-    </script>
-  </body>
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="/assets/css/main.css" />
+
+  <!-- Fallback styles if JS disabled -->
+  <noscript>
+    <link rel="stylesheet" href="/assets/css/noscript.css" />
+  </noscript>
+</head>
+
+<body>
+
+<!-- Header -->
+<header id="header">
+  <div class="inner">
+
+    <h1>Dmitry Naishev</h1>
+    <p>CEO | Commercial Director | Business Development</p>
+
+    <nav>
+      <a href="#about">Обо мне</a>
+      <a href="#blog">Блог</a>
+      <a href="#contacts">Контакты</a>
+      <a href="/en/">EN</a>
+    </nav>
+
+  </div>
+</header>
+
+<!-- About -->
+<section id="about">
+  <h2>Обо мне</h2>
+
+  <p>
+    Топ-менеджер с 20+ летним опытом в B2B и промышленности.
+    Запуск и масштабирование продаж, развитие команд,
+    вывод продуктов на рынок.
+  </p>
+
+</section>
+
+<!-- Blog -->
+<section id="blog">
+  <h2>Блог</h2>
+
+  <p>Размышления о бизнесе, управлении и развитии.</p>
+
+  <ul>
+    <li>Первая статья — скоро</li>
+    <li>Вторая статья — скоро</li>
+  </ul>
+
+</section>
+
+<!-- Contacts -->
+<section id="contacts">
+  <h2>Контакты</h2>
+
+  <p>Email: yourmail@example.com</p>
+  <p>LinkedIn: linkedin.com/in/yourprofile</p>
+
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+  <p>© 2026 Dmitry Naishev</p>
+</footer>
+
+</body>
 </html>
