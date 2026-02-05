@@ -1,0 +1,10 @@
+{
+  "name": "naishev-site",
+  "private": true,
+  "scripts": {
+    "build": "sass main.scss assets/css/main.css --no-source-map --style=compressed && sass noscript.scss assets/css/noscript.css --no-source-map --style=compressed"
+  },
+  "devDependencies": {
+    "sass": "^1.70.0"
+  }
+}
